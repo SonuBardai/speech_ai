@@ -10,6 +10,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
@@ -37,6 +38,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "speech_ai.urls"
+
+SYSTEM_COMMAND = "You are a helpful assistant."
 
 TEMPLATES = [
     {

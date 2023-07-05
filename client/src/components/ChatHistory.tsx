@@ -4,7 +4,7 @@ const ChatHistory: React.FC<{
   messages: MessageRender[];
 }> = ({ messages }) => {
   return (
-    <ul className="w-[400px] p-4 h-[400px] overflow-y-auto">
+    <ul className="p-4 h-[400px] overflow-y-auto">
       {messages.map((message, index) => (
         <li
           key={index}

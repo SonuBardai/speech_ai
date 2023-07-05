@@ -4,10 +4,9 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from speech_ai import settings
 
-SYSTEM_COMMAND = "You are a helpful assistant."
 
 conversation_history = [
-    {"role": "system", "content": SYSTEM_COMMAND},
+    {"role": "system", "content": settings.SYSTEM_COMMAND},
 ]
 
 
